@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat, no-repeat;
   background-position: right 50vw bottom 50vh, left 50vw top 50vh;
   background-color: $darkCyan;
-  color:$veryDarkDesaturatedBlue;
+  color: $veryDarkDesaturatedBlue;
 }
 .profile-card {
   background-color: white;
@@ -84,7 +84,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex:1;
+      flex: 1;
     }
     .stat-number {
       font-weight: bold;
