@@ -1,0 +1,116 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+//color variables
+$darkCyan: hsl(185, 75%, 39%);
+$veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+$darkGrayishBlue: hsl(227, 10%, 46%);
+$darkGray: hsl(0, 0%, 59%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-color: $darkCyan;
+}
+.profile-card {
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 1rem 1rem 1rem hsla(0, 0%, 0%, 0.05);
+  width: 21.875rem;
+  height: 23.375rem;
+  background-image: url("images/bg-pattern-card.svg");
+  background-position: top;
+  background-repeat: repeat-x;
+  background-size: auto 8.725rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.625rem 0.625rem 0 0.625rem;
+  .avatar {
+    border-radius: 50%;
+    border: 0.35rem solid white;
+    width: 6.5rem;
+    height: 6.5rem;
+    background-image: url("images/image-victor.jpg");
+    background-size: cover;
+    margin-top: 5.4rem;
+  }
+  .name-age {
+    display: flex;
+  }
+  .name {
+    font-weight: bold;
+  }
+  .age {
+    color: $darkGrayishBlue;
+    margin-left: 0.5rem;
+  }
+  .location {
+    text-align: center;
+    font-size: 0.9rem;
+    color: $darkGrayishBlue;
+    margin-top: 0.5rem;
+  }
+  hr {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: $darkGray;
+    width: 100%;
+    opacity: 0.3;
+  }
+  .stats {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-bottom: 1.8rem;
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .stat-number {
+      font-weight: bold;
+    }
+    .stat-text {
+      margin-top: 0.2rem;
+      font-size: 0.6rem;
+      color: $darkGray;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+footer {
+  padding: 0.625rem;
+  text-align: center;
+  font-size: 0.8rem;
+  p {
+    color: $veryDarkDesaturatedBlue;
+    margin-bottom: 0.3rem;
+  }
+  i {
+    font-size: 0.9rem;
+  }
+  a {
+    color: $veryDarkDesaturatedBlue;
+  }
+  a:hover {
+    color: $darkCyan;
+    transition: 700ms;
+  }
+}
