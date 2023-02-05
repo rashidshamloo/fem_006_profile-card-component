@@ -78,6 +78,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 .profile-card .stats .stat-number {
   font-weight: bold;
